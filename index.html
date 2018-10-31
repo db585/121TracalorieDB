@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <!-- Navbar -->
   <nav>
     <div class="nav-wrapper blue">
       <div class="container">
@@ -26,7 +27,59 @@
   <br>
 
   <div class="container">
-    
+
+    <!-- Form card -->
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Add Meal / Food Itm</span>
+        <form class="col">
+          <div class="row">
+
+            <div class="input-field col s6">
+              <input type="text" id="item-name" placeholder="Add Item">
+              <label for="item-name">Meal</label>
+              <!-- <span class="helper-text" data-error="Enter name of the meal" data-success="right"></span> -->
+            </div>
+
+            <div class="input-field col s6">
+              <input type="text" id="item-calories" placeholder="Add Calories">
+              <label for="item-calories">Calories</label>
+              <!-- <span class="helper-text" data-error="Enter name of the meal" data-success="right"></span> -->
+            </div>
+
+            <button class="add-btn btn blue darken-3"><i class="fas fa-plus"></i> Add Meal</button>
+            <!-- <button class="btn update-btn orange"><i class="fas fa-edit"></i> Update Meal</button>
+            <button class="btn delete-btn red"><i class="fas fa-times"></i> Delete Meal</button> -->
+            <button class="btn back-btn grey right"><i class="fas fa-arrow-circle-left"></i> Back</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Calories counter -->
+    <h3 class="center-align">Total Calories: <span class="total-calories">0</span> </h3>
+
+    <!-- Item List -->
+    <ul id="item-list" class="collection">
+      <!-- <li id="item-0" class="collection-item">
+        <strong>Steak Dinner: </strong> <em>1200 Calories</em>
+        <a href="#" class="secondary-content">
+          <i class="edit-item fas fa-pencil-alt"></i>
+        </a>
+      </li>
+      <li id="item-1" class="collection-item">
+        <strong>Supper: </strong> <em>1000 Calories</em>
+        <a href="#" class="secondary-content">
+          <i class="edit-item fas fa-pencil-alt"></i>
+        </a>
+      </li>
+      <li id="item-2" class="collection-item">
+        <strong> Breakfast: </strong> <em>800 Calories</em>
+        <a href="#" class="secondary-content">
+          <i class="edit-item fas fa-pencil-alt"></i>
+        </a>
+      </li> -->
+    </ul>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
